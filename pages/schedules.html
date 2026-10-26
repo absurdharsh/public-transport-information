@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schedules</title>
+    <title>Bus Schedules - Public Transport Information</title>
 </head>
-<body>
-    <h1>work in progress</h1>
+<body data-theme="industrial-transit" data-page="schedules">
+    
+    <header class="transit-header">
+        <div class="logo-container">
+            <h1 class="site-title">City Bus Hub</h1>
+            <p class="site-subtitle">Daily Route Timetables</p>
+        </div>
+        
+        <nav class="primary-nav" aria-label="Main Navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../index.html">Home</a></li>
+                <li class="nav-item"><a href="schedules.html" aria-current="page">Bus Schedules</a></li>
+                <li class="nav-item"><a href="about.html">About & Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        
+        <section class="page-intro">
+            <header class="section-header">
+                <h2 class="section-heading">Daily Bus Schedules</h2>
+                <p class="section-description">Static timetable for local Greater Noida city bus routes. No live connection required.</p>
+            </header>
+        </section>
+
+        <section id="bus" class="schedule-section">
+            <div class="table-container" tabindex="0" aria-label="Bus schedule table">
+                <table class="transit-table data-matrix">
+                    <caption class="sr-only">Detailed daily departure times for city buses</caption>
+                    <thead class="table-head">
+                        <tr class="table-row header-row">
+                            <th scope="col" class="table-header">Route ID</th>
+                            <th scope="col" class="table-header">Start Location</th>
+                            <th scope="col" class="table-header">Destination</th>
+                            <th scope="col" class="table-header">Departure Time</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr class="table-row data-row">
+                            <td class="table-cell route-id"><strong>Bus 10A</strong></td>
+                            <td class="table-cell">Alpha I Commercial Belt</td>
+                            <td class="table-cell">Beta II Plaza</td>
+                            <td class="table-cell time-cell"><time datetime="08:00">08:00 AM</time></td>
+                        </tr>
+                        <tr class="table-row data-row">
+                            <td class="table-cell route-id"><strong>Bus 42C</strong></td>
+                            <td class="table-cell">Beta I Gate</td>
+                            <td class="table-cell">Gamma Shopping Mall</td>
+                            <td class="table-cell time-cell"><time datetime="09:15">09:15 AM</time></td>
+                        </tr>
+                        <tr class="table-row data-row">
+                            <td class="table-cell route-id"><strong>Bus 12B</strong></td>
+                            <td class="table-cell">Gamma II Sector</td>
+                            <td class="table-cell">Delta I Metro Station</td>
+                            <td class="table-cell time-cell"><time datetime="10:30">10:30 AM</time></td>
+                        </tr>
+                        <tr class="table-row data-row">
+                            <td class="table-cell route-id"><strong>Bus 88X</strong></td>
+                            <td class="table-cell">Delta II</td>
+                            <td class="table-cell">Alpha II Metro</td>
+                            <td class="table-cell time-cell"><time datetime="14:00">02:00 PM</time></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="transit-footer">
+        <div class="footer-content">
+            <p class="copyright-text">&copy; 2026 Public Transport Info. Created for Web Designing (DCSE0152).</p>
+            <nav class="footer-nav" aria-label="Footer Navigation">
+                <ul class="footer-links">
+                    <li><a href="about.html">Contact Us</a></li>
+                    <li><a href="#top">Back to top</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
 </body>
 </html>
